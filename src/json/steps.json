@@ -1,0 +1,26 @@
+[   
+    {
+    "name":"Explore Our Options",
+    "icon":"../assets/icons/search.svg",
+    "description":"Choose from pre-designed PCs or build your own from scratch.",
+    "image":"../assets/images/pc_zeus1.webp"
+    },
+    {
+    "name":"Customize Every Detail",
+    "icon":"../assets/icons/search.svg",
+    "description":"Select components, case design, and extras to fit your preferences.",
+    "image":"../assets/images/pc_zeus1.webp"
+    },
+    {
+    "name":"Review and Confirm",
+    "icon":"../assets/icons/search.svg",
+    "description":"Verify your configuration, save your design, and confirm your purchase.",
+    "image":"../assets/images/pc_zeus1.webp"
+    },
+    {
+    "name":"Get It Delivered to Your Doorstep",
+    "icon":"../assets/icons/search.svg",
+    "description":"Your assembled PC will arrive ready for you to start gaming without hassle.",
+    "image":"../assets/images/pc_zeus1.webp"
+    }
+]
