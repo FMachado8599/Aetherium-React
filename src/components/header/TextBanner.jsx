@@ -1,4 +1,11 @@
+import { useText } from '../../context/textContext.jsx'
+
 const TextBanner = () =>{
-    return <div>Hola soy un TextBanner</div>
+
+    const { text } = useText();
+
+    return (
+        <p>{text.headerBanner.banner1}</p>
+    )
 }
 export default TextBanner;

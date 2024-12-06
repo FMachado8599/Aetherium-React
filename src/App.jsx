@@ -1,6 +1,6 @@
 import './App.css';
-import  Header  from './components/header/Header.jsx';
-import Main  from './components/main/Main.jsx';
+import Header from './components/header/Header.jsx';
+import Main from './components/main/Main.jsx';
 import Footer from './components/Footer.jsx';
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
   return (
     <div>
       <Header/>
-      <Main/>
-      <Footer/>
+      <Main />
+      <Footer />
     </div>
   )
 }

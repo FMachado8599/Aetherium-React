@@ -1,18 +1,19 @@
-import ProcessText from "../../../json/processText.json"
 import StepsContainer from "./StepsContainer.jsx"
+import { useText } from '../../../context/textContext.jsx'
 
 const Process = () =>{
+
+    const { text } = useText();
+    
     return(
-        <div>
-            {ProcessText.map((ProcessText, index) => (
-                <div key={index}>
-                    <h1><span>{ProcessText.headingSpan}</span> {ProcessText.heading1}</h1>
-                    <p>{ProcessText.paragraph}</p>
-                    <StepsContainer/>
-                    <button>{ProcessText.buttonCTA}</button>
-                </div>
-            ))}
-        </div>
+        <section>
+            <div>
+                <h1><span>{text.processText.headingSpan}</span> {text.processText.heading1}</h1>
+                <p>{text.processText.paragraph}</p>
+                <StepsContainer />
+                <button>{text.processText.buttonCTA}</button>
+            </div>
+        </section>
     )
 }
 export default Process;

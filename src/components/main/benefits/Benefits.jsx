@@ -1,11 +1,14 @@
-import BenefitsText from "../../../json/benefits.json";
 import BenefitsContainer from './BenefitsContainer.jsx';
+import { useText } from '../../../context/textContext.jsx'
 
 const Benefits = () =>{
+
+    const { text } = useText();
+
     return (
         <section>
-            <h2>{BenefitsText.benefitsTitle}</h2>
-            <BenefitsContainer/>
+            <h2>{text.benefitsTitle}</h2>
+            <BenefitsContainer />
         </section>
     )
 }

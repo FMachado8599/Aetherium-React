@@ -1,11 +1,14 @@
-import OpinionsText from "../../../json/opinions.json";
 import OpinionsContainer from './OpinionsContainer.jsx';
+import { useText } from '../../../context/textContext.jsx'
 
 const Opinions = () =>{
+
+    const { text } = useText();
+
     return (
         <section>
-            <h2>{OpinionsText.opinionsTitle}</h2>
-            <OpinionsContainer/>
+            <h2>{text.opinionsTitle}</h2>
+            <OpinionsContainer />
         </section>
     )
 }

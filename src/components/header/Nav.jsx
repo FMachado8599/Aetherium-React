@@ -1,16 +1,19 @@
+import { useText } from '../../context/textContext.jsx'
+
 const Nav = () =>{
-    return <div>
-        <ul>
-            <li>
-                <a href="">Products</a>
-            </li>
-            <li>
-                <a href="">Conact</a>
-            </li>
-            <li>
-                <a href="">Bulid PC</a>
-            </li>
-        </ul>
-    </div>
+
+    const { text } = useText();
+
+    return (
+        <div>
+                <ul>
+                    {text.navbar.map((navLink, index) => (
+                        <li key={index}>
+                            <a href="">{navLink.text}</a>
+                        </li>
+                    ))}
+                </ul>
+        </div>
+    )
 }
 export default Nav;

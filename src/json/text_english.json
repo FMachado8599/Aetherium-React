@@ -1,0 +1,131 @@
+{   
+    "headerBanner": {
+          "banner1": "Your Gaming PC, Ready!",
+          "banner2": "Quality guarantee and technical support included.",
+          "banner3": "Build the PC of your dreams with the best components and our expertise."
+      },
+    "navbar":[
+            {"text":"Products"},
+            {"text":"Contact"},
+            {"text":"Build PC"}
+    ],
+    "heroText":[
+        {
+            "heading1":"Your Gaming PC",
+            "headingSpan":"Customized",
+            "heading3":"Build the PC of your dreams with the best components and our expertise. Quality guarantee and technical support included.",
+            "buttonCTA":"Build my PC"
+        }
+    ],
+    "processText":[
+        {
+        "heading1":"Process",
+        "headingSpan":"Unique & Easy",
+        "paragraph":"How is it done?",
+        "buttonCTA":"Start Now"
+        }
+    ],
+    "processSteps":[
+        {
+        "name":"Explore Our Options",
+        "icon":"../assets/icons/search.svg",
+        "description":"Choose from pre-designed PCs or build your own from scratch.",
+        "image":"../assets/images/pc_zeus1.webp"
+        },
+        {
+        "name":"Customize Every Detail",
+        "icon":"../assets/icons/search.svg",
+        "description":"Select components, case design, and extras to fit your preferences.",
+        "image":"../assets/images/pc_zeus1.webp"
+        },
+        {
+        "name":"Review and Confirm",
+        "icon":"../assets/icons/search.svg",
+        "description":"Verify your configuration, save your design, and confirm your purchase.",
+        "image":"../assets/images/pc_zeus1.webp"
+        },
+        {
+        "name":"Get It Delivered to Your Doorstep",
+        "icon":"../assets/icons/search.svg",
+        "description":"Your assembled PC will arrive ready for you to start gaming without hassle.",
+        "image":"../assets/images/pc_zeus1.webp"
+        }
+      ],
+    "benefitsTitle":"Why Choose Aetherium",
+    "benefits":[
+        {
+        "image":"../assets/icons/shield.svg",
+        "title": "Extended Warranty",
+        "description": "3 years warranty on all our systems."
+        },
+        {
+        "image":"../assets/icons/truck.svg",
+        "title": "Free Shipping",
+        "description": "Free shipping across the peninsula."
+        },
+        {
+        "image":"../assets/icons/headset.svg",
+        "title": "24/7 Support",
+        "description": "Technical assistance available all day."
+        },
+        {
+        "image":"../assets/icons/tools.svg",
+        "title": "Specialized Service",
+        "description": "Specialized maintenance and repair services."
+        }
+      ],
+      "opinionsTitle": "What Our Clients Say",
+      "opinions": [
+        {
+          "avatar": "../assets/images/pc_zeus1.webp",
+          "name": "Carlos Rodríguez",
+          "role": "Professional Streamer",
+          "quote": "The best decision I made was trusting TechPC for my streaming setup. The performance is exceptional.",
+          "rating": "5/5"
+        },
+        {
+          "avatar": "../assets/images/pc_zeus1.webp",
+          "name": "Ana García",
+          "role": "Competitive Gamer",
+          "quote": "My custom PC exceeds all my expectations. The service and advice were impeccable.",
+          "rating": "5/5"
+        },
+        {
+          "avatar": "../assets/images/pc_zeus1.webp",
+          "name": "Miguel Ángel",
+          "role": "3D Designer",
+          "quote": "Perfect power and stability for my work. The technical support is always available when I need it.",
+          "rating": "4/5"
+        }
+      ],
+      "companyInfo": {
+        "name": "TechPC",
+        "description": "Specialists in custom gaming PCs with over 10 years of experience."
+      },
+      "quickLinks": {
+        "title": "Quick Links",
+        "links": [
+          { "name": "Products", "url": "/products" },
+          { "name": "Build PC", "url": "/build" },
+          { "name": "Contact", "url": "/contact" },
+          { "name": "Support", "url": "/support" }
+        ]
+      },
+      "legal": {
+        "title": "Legal",
+        "links": [
+          { "name": "Privacy Policy", "url": "/privacy-policy" },
+          { "name": "Terms and Conditions", "url": "/terms-and-conditions" },
+          { "name": "Warranty", "url": "/warranty" }
+        ]
+      },
+      "socialMedia": {
+        "title": "Follow Us",
+        "platforms": [
+            { "name": "Facebook", "url":"../assets/icons/facebook.svg", "link":"https://fmachado.site" },
+            { "name": "Instagram", "url":"../assets/icons/instagram.svg", "link":"https://fmachado.site" },
+            { "name": "WhatsApp", "url": "../assets/icons/whatsapp.svg", "link":"https://fmachado.site" }
+        ]
+      },
+      "copyright": "© 2024 TechPC. All rights reserved."
+}

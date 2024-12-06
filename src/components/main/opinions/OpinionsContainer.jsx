@@ -1,15 +1,24 @@
-import OpinionsText from "../../../json/opinions.json";
+import { useText } from '../../../context/textContext.jsx'
+import image1 from '../../../assets/images/pc_zeus1.webp'
+import image2 from '../../../assets/images/pc_zeus1.webp'
+import image3 from '../../../assets/images/pc_zeus1.webp'
+import image4 from '../../../assets/images/pc_zeus1.webp'
 
 const Opinions = () =>{
+
+    const { text } = useText();
+
+    const image = [image1,image2,image3,image4] 
+
     return (
         <ul>
-            {OpinionsText.opinions.map((opinions, index) => (
+            {text.opinions.map((opinion, index) => (
                 <li key={index}>
-                    <img src={opinions.avatar}></img>
-                    <h1>{opinions.name}</h1>
-                    <p>{opinions.role}</p>
-                    <p>{opinions.quote}</p>
-                    <p>{opinions.rating}</p>
+                    <img src={image[index]} alt={`Avatar ${index + 1}`} />
+                    <h1>{opinion.name}</h1>
+                    <p>{opinion.role}</p>
+                    <p>{opinion.quote}</p>
+                    <p>{opinion.rating}</p>
                 </li>
             ))}
         </ul>

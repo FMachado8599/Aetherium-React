@@ -1,0 +1,131 @@
+{   
+    "headerBanner": {
+            "banner1": "Tu PC Gamer, Prontita!",
+            "banner2": "Garantía de calidad y soporte técnico incluido.",
+            "banner3": "Construye la PC de tus sueños con los mejores componentes y nuestra experiencia."
+        },
+    "navbar":[
+        {"text":"Productos"},
+        {"text":"Contacto"},
+        {"text":"Armar PC"}
+    ],
+    "heroText": [
+        {
+            "heading1": "Tu PC Gamer",
+            "headingSpan": "Personalizada",
+            "heading3": "Construye la PC de tus sueños con los mejores componentes y nuestra experiencia. Garantía de calidad y soporte técnico incluido.",
+            "buttonCTA": "Construir mi PC"
+        }
+    ],
+    "processText": [
+        {
+            "heading1": "Proceso",
+            "headingSpan": "Único y Fácil",
+            "paragraph": "¿Cómo se hace?",
+            "buttonCTA": "Comenzar ahora"
+        }
+    ],
+    "processSteps": [
+        {
+            "name": "Explora Nuestras Opciones",
+            "icon": "../assets/icons/search.svg",
+            "description": "Elige entre PCs prediseñadas o crea la tuya desde cero.",
+            "image": "../assets/images/pc_zeus1.webp"
+        },
+        {
+            "name": "Personaliza Cada Detalle",
+            "icon": "../assets/icons/search.svg",
+            "description": "Selecciona componentes, diseño de la caja y extras según tus preferencias.",
+            "image": "../assets/images/pc_zeus1.webp"
+        },
+        {
+            "name": "Revisa y Confirma",
+            "icon": "../assets/icons/search.svg",
+            "description": "Verifica tu configuración, guarda tu diseño y confirma tu compra.",
+            "image": "../assets/images/pc_zeus1.webp"
+        },
+        {
+            "name": "Recíbelo en la Puerta de Tu Casa",
+            "icon": "../assets/icons/search.svg",
+            "description": "Tu PC ensamblada llegará lista para que comiences a jugar sin complicaciones.",
+            "image": "../assets/images/pc_zeus1.webp"
+        }
+    ],
+    "benefitsTitle": "Por Qué Elegir Aetherium",
+    "benefits": [
+        {
+            "image": "../assets/icons/shield.svg",
+            "title": "Garantía Extendida",
+            "description": "3 años de garantía en todos nuestros sistemas."
+        },
+        {
+            "image": "../assets/icons/truck.svg",
+            "title": "Envío Gratis",
+            "description": "Envío gratis en toda la península."
+        },
+        {
+            "image": "../assets/icons/headset.svg",
+            "title": "Soporte 24/7",
+            "description": "Asistencia técnica disponible todo el día."
+        },
+        {
+            "image": "../assets/icons/tools.svg",
+            "title": "Servicio Especializado",
+            "description": "Servicios especializados de mantenimiento y reparación."
+        }
+    ],
+    "opinionsTitle": "Lo Que Dicen Nuestros Clientes",
+    "opinions": [
+        {
+            "avatar": "../assets/images/pc_zeus1.webp",
+            "name": "Carlos Rodríguez",
+            "role": "Streamer Profesional",
+            "quote": "La mejor decisión que tomé fue confiar en TechPC para mi configuración de streaming. El rendimiento es excepcional.",
+            "rating": "5/5"
+        },
+        {
+            "avatar": "../assets/images/pc_zeus1.webp",
+            "name": "Ana García",
+            "role": "Gamer Competitiva",
+            "quote": "Mi PC personalizada supera todas mis expectativas. El servicio y el asesoramiento fueron impecables.",
+            "rating": "5/5"
+        },
+        {
+            "avatar": "../assets/images/pc_zeus1.webp",
+            "name": "Miguel Ángel",
+            "role": "Diseñador 3D",
+            "quote": "Potencia y estabilidad perfectas para mi trabajo. El soporte técnico siempre está disponible cuando lo necesito.",
+            "rating": "4/5"
+        }
+    ],
+    "companyInfo": {
+        "name": "TechPC",
+        "description": "Especialistas en PCs gaming personalizadas con más de 10 años de experiencia."
+    },
+    "quickLinks": {
+        "title": "Enlaces Rápidos",
+        "links": [
+            { "name": "Productos", "url": "/products" },
+            { "name": "Construir PC", "url": "/build" },
+            { "name": "Contacto", "url": "/contact" },
+            { "name": "Soporte", "url": "/support" }
+        ]
+    },
+    "legal": {
+        "title": "Legal",
+        "links": [
+            { "name": "Política de Privacidad", "url": "/privacy-policy" },
+            { "name": "Términos y Condiciones", "url": "/terms-and-conditions" },
+            { "name": "Garantía", "url": "/warranty" }
+        ]
+    },
+    "socialMedia": {
+        "title": "Síguenos",
+        "platforms": [
+            { "name": "Facebook", "url": "../assets/icons/facebook.svg", "link": "https://fmachado.site" },
+            { "name": "Instagram", "url": "../assets/icons/instagram.svg", "link": "https://fmachado.site" },
+            { "name": "WhatsApp", "url": "../assets/icons/whatsapp.svg", "link": "https://fmachado.site" }
+        ]
+    },
+    "copyright": "© 2024 TechPC. Todos los derechos reservados."
+}

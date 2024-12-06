@@ -1,28 +1,45 @@
-import Footer from "../json/footer.json"
+import { useText } from '../context/textContext.jsx'
 
 const Footer = () =>{
+
+    const { text } = useText();
+
     return (
         <footer>
             <div>
                 <div>
-                    <h3><a href=""></a></h3>
-                    <p></p>
+                    <h3><a href="">{text.companyInfo.name}</a></h3>
+                    <p>{text.companyInfo.decription}</p>
                 </div>
                 <div>
-                    <h3></h3>
+                    <h3>{text.quickLinks.title}</h3>
                     <ul>
-
+                        {text.quickLinks.links.map((link, index) => (
+                            <li key={index}>
+                                <a href="">{link.name}</a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div>
-                    <h3></h3>
+                    <h3>{text.legal.title}</h3>
                     <ul>
-
+                        {text.legal.links.map((link, index) => (
+                            <li key={index}>
+                                <a href="">{link.name}</a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div>
-                    <h3></h3>
-                    <img src="" alt="" />
+                    <h3>{text.socialMedia.title}</h3>
+                    <ul>
+                        {text.socialMedia.platforms.map((platform, index) => (
+                            <li key={index}>
+                                <a href={platform.link}><img src={platform.url} alt={platform.name}/></a>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </div>
             <div>

@@ -1,16 +1,19 @@
-import heroText from "../../json/heroText.json"
+import { useText } from '../../context/textContext.jsx'
 
 const Hero = () =>{
+
+    const { text } = useText();
+
     return (
-        <div>
-            {heroText.map((heroText, index) => (
+        <section>
+            {text.heroText.map((text, index) => (
                 <div key={index}>
-                    <h1>{heroText.heading1} <span>{heroText.headingSpan}</span></h1>
-                    <h3>{heroText.heading3}</h3>
-                    <button>{heroText.buttonCTA}</button>
+                    <h1>{text.heading1} <span>{text.headingSpan}</span></h1>
+                    <h3>{text.heading3}</h3>
+                    <button>{text.buttonCTA}</button>
                 </div>
             ))}
-        </div>
+        </section>
     )
 }
 export default Hero;
