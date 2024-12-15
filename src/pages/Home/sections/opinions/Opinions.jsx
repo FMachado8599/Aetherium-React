@@ -1,5 +1,5 @@
 import OpinionsContainer from './OpinionsContainer.jsx';
-import { useText } from '../../../context/textContext.jsx'
+import { useText } from '../../../../context/textContext.jsx'
 
 const Opinions = () =>{
 

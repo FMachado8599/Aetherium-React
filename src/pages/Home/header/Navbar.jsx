@@ -1,6 +1,6 @@
 import Nav from './Nav.jsx';
-import Logo from '../../assets/logos/logo-claro.svg'
-import Menu from './Menu.jsx'
+import Logo from '../../../assets/logos/logo-claro.svg'
+import Menu from './NavMenu.jsx'
 
 const Navbar = () =>{
     return (

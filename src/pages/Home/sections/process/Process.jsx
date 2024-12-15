@@ -1,5 +1,5 @@
 import StepsContainer from "./StepsContainer.jsx"
-import { useText } from '../../../context/textContext.jsx'
+import { useText } from '../../../../context/textContext.jsx'
 
 const Process = () =>{
 

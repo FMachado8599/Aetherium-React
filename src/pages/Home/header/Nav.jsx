@@ -1,4 +1,4 @@
-import { useText } from '../../context/textContext.jsx'
+import { useText } from '../../../context/textContext.jsx'
 
 const Nav = () =>{
 

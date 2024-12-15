@@ -1,12 +1,12 @@
-import { useText } from '../../../context/textContext.jsx'
-import icon1 from '../../../assets/Icons/search.svg'
-import icon2 from '../../../assets/Icons/customize.svg'
-import icon3 from '../../../assets/Icons/check-list.svg'
-import icon4 from '../../../assets/Icons/truck.svg'
-import image1 from '../../../assets/images/pc_zeus1.webp'
-import image2 from '../../../assets/images/pc_zeus1.webp'
-import image3 from '../../../assets/images/pc_zeus1.webp'
-import image4 from '../../../assets/images/pc_zeus1.webp'
+import { useText } from '../../../../context/textContext.jsx'
+import icon1 from '../../../../assets/Icons/search.svg'
+import icon2 from '../../../../assets/Icons/customize.svg'
+import icon3 from '../../../../assets/Icons/check-list.svg'
+import icon4 from '../../../../assets/Icons/truck.svg'
+import image1 from '../../../../assets/images/pc_zeus1.webp'
+import image2 from '../../../../assets/images/pc_zeus1.webp'
+import image3 from '../../../../assets/images/pc_zeus1.webp'
+import image4 from '../../../../assets/images/pc_zeus1.webp'
 
 function StepsContainer() {
 

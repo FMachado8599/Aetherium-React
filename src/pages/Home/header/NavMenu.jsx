@@ -1,5 +1,5 @@
 import React from 'react'
-import Cart from './Cart'
+import Cart from './Cart.jsx'
 import LanguageSelector from './LanguageSelector.jsx'
 
 const Menu = () => {
