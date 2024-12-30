@@ -1,27 +1,43 @@
-import { useText } from '../../../../context/textContext.jsx'
-import image1 from '../../../../assets/images/pc_zeus1.webp'
-import image2 from '../../../../assets/images/pc_zeus1.webp'
-import image3 from '../../../../assets/images/pc_zeus1.webp'
-import image4 from '../../../../assets/images/pc_zeus1.webp'
+import { db } from '../../../../firebase/config.js'
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { useEffect, useState } from 'react';
 
-const Opinions = () =>{
+const OpinionsContainer = () =>{
 
-    const { text } = useText();
-
-    const image = [image1,image2,image3,image4] 
+    const [user, setUser] = useState([]);
+    
+        useEffect(() => {
+        const fetchClients = async () => {
+            try {
+            const userRef = collection(db, "users");
+            const userQuery = query(userRef, where("role", "==", "client"));
+            const querySnapshot = await getDocs(userQuery);
+            const clients = querySnapshot.docs.map((doc) => ({
+                id: doc.id,
+                ...doc.data(),
+            }));
+    
+            setUser(clients);
+            } catch (error) {
+            console.error("Error fetching users:", error);
+            }
+        };
+        
+        fetchClients();
+        }, []);
 
     return (
         <ul>
-            {text.opinions.map((opinion, index) => (
+            {user.map((user, index) => (
                 <li key={index}>
-                    <img src={image[index]} alt={`Avatar ${index + 1}`} />
-                    <h1>{opinion.name}</h1>
-                    <p>{opinion.role}</p>
-                    <p>{opinion.opinion}</p>
-                    <p>{opinion.rating}</p>
+                    <img src={user.avatar} alt={`Avatar`} />
+                    <h1>{user.name}</h1>
+                    <p>{user.role}</p>
+                    <p>{user.opinion}</p>
+                    <p>{user.rating}</p>
                 </li>
             ))}
         </ul>
     )
 }
-export default Opinions;
+export default OpinionsContainer;
