@@ -1,0 +1,26 @@
+.nav{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .nav-link-list{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        &:nth-child(3){
+            background-color: var(--primary-color);
+            border-radius: 1rem;
+        }
+        & .nav-list-item{
+            & a{
+                text-decoration: none;
+                color: var(--white);
+                text-transform: uppercase;
+            }
+        }
+    }
+}

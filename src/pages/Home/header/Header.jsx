@@ -1,11 +1,11 @@
-import Navbar from './Navbar.jsx';
-import TextBanner from './TextBanner.jsx';
+import Navbar from './Nav/Navbar.jsx';
+import TextBanner from './TextBanner/TextBanner.jsx';
 
 
 const Header = () =>{
-    return <div>
+    return <header className='header'>
         <TextBanner/>
         <Navbar/>
-    </div>
+    </header>
 }
 export default Header;

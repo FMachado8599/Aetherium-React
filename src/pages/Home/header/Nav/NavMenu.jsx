@@ -1,10 +1,10 @@
 import React from 'react'
-import Cart from './Cart.jsx'
-import LanguageSelector from './LanguageSelector.jsx'
+import Cart from '../Cart.jsx'
+import LanguageSelector from '../LanguageSelector.jsx'
 
 const Menu = () => {
   return (
-    <div>
+    <div className='nav-menu'>
         <LanguageSelector/>
         <Cart/>
     </div>

@@ -1,0 +1,15 @@
+.navbar-functions{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0px 2rem;
+    align-items: center;
+    & .logo {
+        height: 50px;
+        will-change: filter;
+        transition: filter 300ms;
+        &:hover {
+            filter: drop-shadow(0 0 2em #646cffaa);
+        }
+    }
+}

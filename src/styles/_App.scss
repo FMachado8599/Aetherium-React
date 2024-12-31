@@ -1,0 +1,31 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--font-primary-color);
+
+  background-color: var(--primary-background-color);
+  --primary-color:#9333ea;
+  --secondary-color:#111827;
+  --secondary-background-color:#374151;
+  --primary-background-color:#030712;
+  --font-primary-color: #fefefe;
+  --font-secondary-color: #d1d5db;
+  --font-tertiary-color: #93a3af;
+  --white: #fefefe;
+}
+dark-mode{
+  --primary-color:#9333ea;
+  --secondary-color:#111827;
+  --primary-background-color:#374151;
+  --secondary-background-color:#030712;
+  --font-primary-color: #fefefe;
+  --font-secondary-color: #d1d5db;
+  --font-tertiary-color: #93a3af;
+}

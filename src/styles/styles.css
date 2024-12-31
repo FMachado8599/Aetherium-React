@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--font-primary-color);
+  background-color: var(--primary-background-color);
+  --primary-color:#9333ea;
+  --secondary-color:#111827;
+  --secondary-background-color:#374151;
+  --primary-background-color:#030712;
+  --font-primary-color: #fefefe;
+  --font-secondary-color: #d1d5db;
+  --font-tertiary-color: #93a3af;
+  --white: #fefefe;
+}
+
+dark-mode {
+  --primary-color:#9333ea;
+  --secondary-color:#111827;
+  --primary-background-color:#374151;
+  --secondary-background-color:#030712;
+  --font-primary-color: #fefefe;
+  --font-secondary-color: #d1d5db;
+  --font-tertiary-color: #93a3af;
+}
+
+.text-banner {
+  background-color: var(--primary-color);
+  color: var(--white);
+  margin-block-start: 0;
+  margin-block-end: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-functions {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0px 2rem;
+  align-items: center;
+}
+.navbar-functions .logo {
+  height: 50px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.navbar-functions .logo:hover {
+  filter: drop-shadow(0 0 2em rgba(100, 108, 255, 0.6666666667));
+}
+
+.nav {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav-link-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+.nav .nav-link-list:last-child {
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+}
+.nav .nav-link-list .nav-list-item a {
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
