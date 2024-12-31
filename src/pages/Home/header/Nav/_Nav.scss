@@ -11,11 +11,15 @@
         justify-content: space-around;
         align-items: center;
         gap: 2rem;
-        &:nth-child(3){
-            background-color: var(--primary-color);
-            border-radius: 1rem;
-        }
         & .nav-list-item{
+            &:last-child{
+                background-color: var(--primary-color);
+                border-radius: 1rem;
+                padding: 1rem;
+                &:hover{
+                    filter: drop-shadow(0 0 10px hsl(from var(--primary-color) h s 50%));
+                }
+            }
             & a{
                 text-decoration: none;
                 color: var(--white);
