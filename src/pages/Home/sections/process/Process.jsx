@@ -6,13 +6,11 @@ const Process = () =>{
     const { text } = useText();
     
     return(
-        <section>
-            <div>
+        <section className="process">
                 <h1><span>{text.processText.headingSpan}</span> {text.processText.heading1}</h1>
                 <p>{text.processText.paragraph}</p>
                 <StepsContainer />
                 <button>{text.processText.buttonCTA}</button>
-            </div>
         </section>
     )
 }

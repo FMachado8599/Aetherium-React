@@ -9,7 +9,7 @@
   line-height: 1.5;
   font-weight: 400;
   color: var(--font-primary-color);
-  background-color: var(--primary-background-color);
+  background-color: var(--secondary-color);
   --primary-color:#9333ea;
   --secondary-color:#111827;
   --secondary-background-color:#374151;
@@ -49,8 +49,9 @@ dark-mode {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 0px 2rem;
+  padding: 0px 1rem;
   align-items: center;
+  height: 75px;
 }
 .navbar-functions .logo {
   height: 50px;
@@ -76,9 +77,13 @@ dark-mode {
   align-items: center;
   gap: 2rem;
 }
-.nav .nav-link-list:last-child {
+.nav .nav-link-list .nav-list-item:last-child {
   background-color: var(--primary-color);
-  border-radius: 1rem;
+  border-radius: 0.3rem;
+  padding: 0.3rem 1rem;
+}
+.nav .nav-link-list .nav-list-item:last-child:hover {
+  filter: drop-shadow(0 0 10px hsl(from var(--primary-color) h s 50%));
 }
 .nav .nav-link-list .nav-list-item a {
   text-decoration: none;
@@ -91,6 +96,48 @@ dark-mode {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 30px;
+}
+
+.process {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  height: auto;
+}
+
+.steps-container .steps-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.steps-container .steps-list .step {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  width: clamp(300px, 25rem, 400px);
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  min-height: 300px;
+}
+.steps-container .steps-list .step h1 {
+  display: inline;
+}
+.steps-container .steps-list .step img {
+  display: inline;
+  fill: var(--primary-color);
+}
+
+.main-home {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

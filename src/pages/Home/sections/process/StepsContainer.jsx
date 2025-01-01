@@ -16,14 +16,13 @@ function StepsContainer() {
     const image = [image1,image2,image3,image4]    
 
     return (
-    <div>
-        <ol>
+    <div className='steps-container'>
+        <ol className='steps-list'>
         {text.processSteps.map((steps, index) => (
-                <li key={index}>
-                    <h1>{steps.name}</h1>
+                <li className='step' key={index} style={{backgroundImage: `url('../../../../assets/images/dalle-pc-compressed.webp')`}}>
                     <img src={icons[index]} alt={`Step ${index + 1} Icon`} />
+                    <h1>{steps.name}</h1>
                     <p>{steps.description}</p>
-                    <img src={image[index]} alt={`Step ${index + 1} Image`} />
                 </li>
             ))}
         </ol>

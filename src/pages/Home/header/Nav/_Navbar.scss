@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 0px 2rem;
+    padding: 0px 1rem;
     align-items: center;
+    height: 75px;
     & .logo {
         height: 50px;
         will-change: filter;

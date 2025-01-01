@@ -1,7 +1,11 @@
-@import './_App.scss';
+@use '_App.scss';
 
-@import '../pages/Home/header/TextBanner/_TextBanner.scss';
-@import '../pages/Home/header/Nav/_Header.scss';
-@import '../pages/Home/header/Nav/_Navbar.scss';
-@import '../pages/Home/header/Nav/_Nav.scss';
-@import '../pages/Home/header/Nav/NavMenu';
+@use '../pages/Home/header/TextBanner/_TextBanner.scss';
+@use '../pages/Home/header/Nav/_Header.scss';
+@use '../pages/Home/header/Nav/_Navbar.scss';
+@use '../pages/Home/header/Nav/_Nav.scss';
+@use '../pages/Home/header/Nav/_NavMenu.scss';
+@use '../pages/Home/header/Cart/_Cart.scss';
+@use '../pages/Home/sections/process/_Process.scss';
+@use '../pages/Home/sections/process/_StepsContainer.scss';
+@use '../pages/Home/Home/_Home.scss'
