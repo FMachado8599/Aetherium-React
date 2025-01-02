@@ -13,16 +13,16 @@
         gap: 2rem;
         & .nav-list-item{
             &:last-child{
-                background-color: var(--primary-color);
+                background-color: $primary-color;
                 border-radius: .3rem;
                 padding:.3rem 1rem;
                 &:hover{
-                    filter: drop-shadow(0 0 10px hsl(from var(--primary-color) h s 50%));
+                    filter: drop-shadow(0 0 10px hsl(from $primary-color h s 50%));
                 }
             }
             & a{
                 text-decoration: none;
-                color: var(--white);
+                color: $white;
                 text-transform: uppercase;
             }
         }

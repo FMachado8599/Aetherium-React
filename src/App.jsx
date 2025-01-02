@@ -16,12 +16,11 @@ function App() {
       <BrowserRouter>
         <Provider store={store}>
           <Routes>
+            <Route path='/' element={<MainPage />}/>
             <Route path='/*' element={<NotFound />}/>
             <Route path='/login' element={<Login />}/>
-            <Route path='/' element={<MainPage />}/>
             <Route path='/admin' element={<Dashboard />}/>
             <Route path='/build-your-pc' element={<Builder />}/>
-            <Route path='/admin' element={<Dashboard />}/>
             <Route path='/contact' element={<Contact />}/>
             <Route path='/products' element={<Products />}/>
           </Routes>

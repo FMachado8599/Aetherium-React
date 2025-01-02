@@ -1,11 +1,13 @@
-@use '_App.scss';
+@use './_App';
+@use './_Mixins';
 
-@use '../pages/Home/header/TextBanner/_TextBanner.scss';
-@use '../pages/Home/header/Nav/_Header.scss';
-@use '../pages/Home/header/Nav/_Navbar.scss';
-@use '../pages/Home/header/Nav/_Nav.scss';
-@use '../pages/Home/header/Nav/_NavMenu.scss';
-@use '../pages/Home/header/Cart/_Cart.scss';
-@use '../pages/Home/sections/process/_Process.scss';
-@use '../pages/Home/sections/process/_StepsContainer.scss';
-@use '../pages/Home/Home/_Home.scss'
+@use '../pages/Home/header/TextBanner/_TextBanner';
+@use '../pages/Home/header/Nav/_Header';
+@use '../pages/Home/header/Nav/_Navbar';
+@use '../pages/Home/header/Nav/_Nav';
+@use '../pages/Home/header/Nav/_NavMenu';
+@use '../pages/Home/header/Cart/_Cart';
+@use '../pages/Home/sections/process/_Process';
+@use '../pages/Home/sections/process/_StepsContainer';
+@use '../pages/Home/Home/_Home';
+@use '../pages/Home/sections/Hero/_Hero';

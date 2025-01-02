@@ -1,143 +1,18 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 16 |                 background-color: $primary-color;
+ *    |                                   ^^^^^^^^^^^^^^
+ *    '
+ *   src\pages\Home\header\Nav\_Nav.scss 16:35  @use
+ *   src\styles\styles.scss 7:1                 root stylesheet */
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: var(--font-primary-color);
-  background-color: var(--secondary-color);
-  --primary-color:#9333ea;
-  --secondary-color:#111827;
-  --secondary-background-color:#374151;
-  --primary-background-color:#030712;
-  --font-primary-color: #fefefe;
-  --font-secondary-color: #d1d5db;
-  --font-tertiary-color: #93a3af;
-  --white: #fefefe;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 16 \2502                  background-color: $primary-color;\d\a    \2502                                    ^^^^^^^^^^^^^^\a    \2575 \a   src\\pages\\Home\\header\\Nav\\_Nav.scss 16:35  @use\a   src\\styles\\styles.scss 7:1                 root stylesheet";
 }
-
-dark-mode {
-  --primary-color:#9333ea;
-  --secondary-color:#111827;
-  --primary-background-color:#374151;
-  --secondary-background-color:#030712;
-  --font-primary-color: #fefefe;
-  --font-secondary-color: #d1d5db;
-  --font-tertiary-color: #93a3af;
-}
-
-.text-banner {
-  background-color: var(--primary-color);
-  color: var(--white);
-  margin-block-start: 0;
-  margin-block-end: 0;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0px;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-}
-
-.navbar-functions {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding: 0px 1rem;
-  align-items: center;
-  height: 75px;
-}
-.navbar-functions .logo {
-  height: 50px;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.navbar-functions .logo:hover {
-  filter: drop-shadow(0 0 2em rgba(100, 108, 255, 0.6666666667));
-}
-
-.nav {
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.nav .nav-link-list {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2rem;
-}
-.nav .nav-link-list .nav-list-item:last-child {
-  background-color: var(--primary-color);
-  border-radius: 0.3rem;
-  padding: 0.3rem 1rem;
-}
-.nav .nav-link-list .nav-list-item:last-child:hover {
-  filter: drop-shadow(0 0 10px hsl(from var(--primary-color) h s 50%));
-}
-.nav .nav-link-list .nav-list-item a {
-  text-decoration: none;
-  color: var(--white);
-  text-transform: uppercase;
-}
-
-.nav-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.process {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  max-width: 1000px;
-  height: auto;
-}
-
-.steps-container .steps-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-.steps-container .steps-list .step {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: flex-start;
-  width: clamp(300px, 25rem, 400px);
-  border: 1px solid white;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  min-height: 300px;
-}
-.steps-container .steps-list .step h1 {
-  display: inline;
-}
-.steps-container .steps-list .step img {
-  display: inline;
-  fill: var(--primary-color);
-}
-
-.main-home {
-  display: flex;
-  justify-content: center;
-}
-
-/*# sourceMappingURL=styles.css.map */

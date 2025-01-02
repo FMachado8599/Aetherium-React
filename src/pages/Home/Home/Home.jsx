@@ -1,4 +1,4 @@
-import Hero from '../sections/Hero.jsx';
+import Hero from '../sections/Hero/Hero.jsx';
 import Process from '../sections/process/Process.jsx';
 import Benefits from '../sections/benefits/Benefits.jsx';
 import Opinions from '../sections/opinions/Opinions.jsx';
