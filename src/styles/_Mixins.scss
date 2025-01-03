@@ -1,5 +1,5 @@
 @mixin cta-button{
-    background-color: violet;
+    background-color: $primary-color;
     color: $white;
     padding: $space-s $space-m;
     border: 1px solid linear-gradient(to right, $primary-color, hsl(from $primary-color h s 110%));

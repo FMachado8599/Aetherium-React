@@ -1,13 +1,4 @@
-@use './_App';
+@use './_Variables';
+@use './_Index';
 @use './_Mixins';
 
-@use '../pages/Home/header/TextBanner/_TextBanner';
-@use '../pages/Home/header/Nav/_Header';
-@use '../pages/Home/header/Nav/_Navbar';
-@use '../pages/Home/header/Nav/_Nav';
-@use '../pages/Home/header/Nav/_NavMenu';
-@use '../pages/Home/header/Cart/_Cart';
-@use '../pages/Home/sections/process/_Process';
-@use '../pages/Home/sections/process/_StepsContainer';
-@use '../pages/Home/Home/_Home';
-@use '../pages/Home/sections/Hero/_Hero';

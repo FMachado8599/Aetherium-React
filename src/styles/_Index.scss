@@ -1,3 +1,11 @@
+@use '../styles/variables' as *;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,15 +19,29 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $font-primary-color;
+
+  background-color: $secondary-color;
 }
 
-a {
-  font-weight: 500;
-  color: $primary-color;
-  text-decoration: inherit;
+a{
+  font-weight: 700;
+  color: $font-primary-color;
+  text-decoration: none;
+  &:hover{
+    color: $primary-color;
+  }
 }
-a:hover {
-  color: hsl(from $primary-color h s 90%);
+
+button{
+  @include cta-button;
+  &:focus-visible,:focus {
+    outline: 4px auto $white;
+  }
 }
 
 body {
@@ -47,10 +69,6 @@ button {
 }
 button:hover {
   border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
