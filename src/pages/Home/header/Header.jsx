@@ -1,4 +1,4 @@
-import Navbar from './Nav/Navbar.jsx';
+import Navbar from './Nav/NavContainer.jsx';
 import TextBanner from './TextBanner/TextBanner.jsx';
 
 

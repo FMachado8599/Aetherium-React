@@ -7,7 +7,7 @@ const Process = () =>{
     
     return(
         <section className="process">
-                <h1><span>{text.processText.headingSpan}</span> {text.processText.heading1}</h1>
+                <h2><span>{text.processText.headingSpan}</span> {text.processText.heading1}</h2>
                 <p>{text.processText.paragraph}</p>
                 <StepsContainer />
                 <button>{text.processText.buttonCTA}</button>

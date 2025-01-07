@@ -9,7 +9,7 @@ const Hero = () =>{
             {text.heroText.map((text, index) => (
                 <div className='hero-text' key={index}>
                     <h1>{text.heading1} <span>{text.headingSpan}</span></h1>
-                    <h3>{text.heading3}</h3>
+                    <p>{text.heading3}</p>
                     <button className='hero-cta-button'>{text.buttonCTA}</button>
                 </div>
             ))}

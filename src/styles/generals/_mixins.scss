@@ -1,0 +1,20 @@
+@use 'variables' as *;
+@use 'typography' as *;
+
+@mixin cta-button{
+    background: linear-gradient(135deg, $primary-color, $secondary-color);
+    background-repeat: no-repeat;
+    color: $white;
+    padding: $space-xs $space-m;
+    font-weight: 700;
+    font-size: $step--1;
+    border-radius: $space-2xs;
+    border: 1px solid transparent;
+    text-transform: capitalize;
+    &:hover {
+        border: 1px solid $font-primary-color;
+    }
+    &:focus-visible,:focus,:active {
+        outline: 2px solid $font-primary-color;
+    }
+}

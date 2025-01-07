@@ -5,7 +5,9 @@ const TextBanner = () =>{
     const { text } = useText();
 
     return (
-        <p className='text-banner'>{text.headerBanner.banner1}</p>
+        <div className='text-banner'>
+            <p>{text.headerBanner.banner1}</p>
+        </div>
     )
 }
 export default TextBanner;

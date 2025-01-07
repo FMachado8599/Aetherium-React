@@ -21,7 +21,7 @@ function StepsContainer() {
         {text.processSteps.map((steps, index) => (
                 <li className='step' key={index} style={{backgroundImage: `url('../../../../assets/images/dalle-pc-compressed.webp')`}}>
                     <img src={icons[index]} alt={`Step ${index + 1} Icon`} />
-                    <h1>{steps.name}</h1>
+                    <h3>{steps.name}</h3>
                     <p>{steps.description}</p>
                 </li>
             ))}

@@ -1,4 +1,15 @@
-@use './_Variables';
-@use './_Index';
-@use './_Mixins';
+@use './generals/_Variables';
+@use './generals/_Index';
+@use './generals/_Typography';
+@use './generals/_Mixins';
+
+@use './components/header/header';
+@use './components/header/textbanner';
+@use './components/header/logo';
+@use './components/header/navbar';
+@use './components/header/nav';
+@use './components/header/navMenu';
+@use './components/header/cart';
+
+@use './components/hero/hero';
 

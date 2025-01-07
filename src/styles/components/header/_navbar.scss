@@ -1,0 +1,10 @@
+@use '../../generals/variables' as *;
+
+.navbar-functions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(from $secondary-color r g b / 70%);
+}

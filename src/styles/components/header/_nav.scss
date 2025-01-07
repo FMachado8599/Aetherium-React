@@ -1,0 +1,21 @@
+@use '../../generals/variables' as *;
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .nav-link-list{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 20px;
+        align-items: center;
+        & li{
+            &:last-child{
+                background-color: $primary-color;
+                border-radius: $space-2xs;
+                padding: $space-2xs $space-s;
+            }
+        }
+    }
+}
