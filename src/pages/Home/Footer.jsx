@@ -1,5 +1,5 @@
 import { useText } from '../../context/textContext.jsx'
-import logo from '../../assets/logos/logo-color.svg'
+import logo from '../../public/assets/logos/logo-color.svg'
 import { Linkedin } from 'lucide-react';
 import { Link } from 'lucide-react';
 

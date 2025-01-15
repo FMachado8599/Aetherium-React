@@ -1,4 +1,4 @@
-import CartIcon from '../../../../assets/Icons/cart.svg';
+import CartIcon from '../../../../public/assets/Icons/cart.svg';
 
 const Cart = () =>{
     return <div>

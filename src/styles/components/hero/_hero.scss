@@ -28,7 +28,7 @@
         height: 100%;
         z-index: -10;
         filter: grayscale(1), ;
-        background-image: url(src/assets/images/hero-pc.webp);
+        background-image: url(src/public/assets/images/hero-pc.webp);
     }
     &::after{
         content: ' ';

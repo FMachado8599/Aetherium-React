@@ -1,8 +1,8 @@
 import { useText } from '../../../../context/textContext.jsx'
-import icon1 from '../../../../assets/Icons/shield.svg'
-import icon2 from '../../../../assets/Icons/truck.svg'
-import icon3 from '../../../../assets/Icons/headset.svg'
-import icon4 from '../../../../assets/Icons/tools.svg'
+import icon1 from '../../../../public/assets/Icons/shield.svg'
+import icon2 from '../../../../public/assets/Icons/truck.svg'
+import icon3 from '../../../../public/assets/Icons/headset.svg'
+import icon4 from '../../../../public/assets/Icons/tools.svg'
 
 const Benefits = () =>{
 

@@ -1,8 +1,8 @@
 import { useText } from '../../../../context/textContext.jsx'
-import icon1 from '../../../../assets/Icons/search.svg'
-import icon2 from '../../../../assets/Icons/customize.svg'
-import icon3 from '../../../../assets/Icons/check-list.svg'
-import icon4 from '../../../../assets/Icons/truck.svg'
+import icon1 from '../../../../public/assets/Icons/search.svg'
+import icon2 from '../../../../public/assets/Icons/customize.svg'
+import icon3 from '../../../../public/assets/Icons/check-list.svg'
+import icon4 from '../../../../public/assets/Icons/truck.svg'
 
 function StepsContainer() {
 
