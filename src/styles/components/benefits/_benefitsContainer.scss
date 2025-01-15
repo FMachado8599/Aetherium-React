@@ -1,0 +1,35 @@
+@use '../../generals/variables' as *;
+@use '../../generals/typography' as *;
+
+.benefits-list{
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    gap: $space-m;
+    & .benefit{
+        overflow: hidden;
+        background: linear-gradient(135deg, rgb(from $secondary-background-color r g b / 20%), rgb(from $primary-background-color r g b / 20%));
+        backdrop-filter: blur(10px);
+        padding: $space-s;
+        border-radius: $space-s;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all .3s ease-in-out;
+        max-width: calc($step-5 * 4);
+        &:hover{
+            border: 1px solid rgb(from $primary-color r g b / 80%);
+            filter: drop-shadow(0 0 10px rgb(from $primary-background-color r g b / 60%));
+        }
+
+        & img{
+            width: 100%;
+            padding: $space-m;
+        }
+        & h2{
+            font-size: $step-2;
+            line-height: $step-3;
+        }
+        & p{
+            font-size: $step--1;
+            color: $font-tertiary-color;
+        }
+    }
+}

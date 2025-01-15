@@ -11,11 +11,11 @@ const Benefits = () =>{
     const icons = [icon1,icon2,icon3,icon4]
 
     return (
-        <ul>
+        <ul className='benefits-list'>
             {text.benefits.map((benefit, index) => (
-                <li key={index}>
+                <li className='benefit' key={index}>
                     <img src={icons[index]} alt={`Benefit ${index + 1} Icon`} />
-                    <h1>{benefit.title}</h1>
+                    <h2>{benefit.title}</h2>
                     <p>{benefit.description}</p>
                 </li>
             ))}

@@ -1,0 +1,16 @@
+@use '../../generals/variables' as *;
+
+.opinion-rating{
+    display: grid;
+    grid-template-columns: repeat(5, 20px);
+    gap: $space-3xs-2xs;
+    color: $primary-color;
+    &:hover{
+        & .filled-star{
+            filter: drop-shadow(0px 0px 5px rgb(from $primary-color r g b / 80%));
+        }
+    }
+    & .filled-star{
+        fill: $primary-color;
+    }
+}

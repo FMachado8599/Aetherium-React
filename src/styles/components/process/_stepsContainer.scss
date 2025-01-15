@@ -1,0 +1,124 @@
+@use '../../generals/variables' as *;
+@use '../../generals/typography' as *;
+
+.steps-list {
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: flex-start;
+    gap: $space-l-xl;
+  
+    & .step {
+      background-color: $secondary-background-color;
+      padding: $space-m $space-s;
+      height: clamp(200px, 1.25rem + 20vw, 400px);
+      width: clamp(300px, 1.25rem + 30vw, 600px);
+      border-radius: $space-s;
+      text-align: start;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: start;
+      overflow: hidden;
+      filter: drop-shadow(5px 5px $space-s rgba(from black r g b / 30%));
+      transition: all 0.3s ease-in-out;
+      z-index: 0;
+      &:hover {
+        filter: drop-shadow(0 0 $space-m rgba(from $primary-color r g b / 30%));
+        &::before{
+            opacity: 1;
+        }
+        & p {
+          opacity: 1;
+          max-height: 50px;
+        }
+      }
+  
+      & p {
+        opacity: 0;
+        max-height: 0; 
+        padding-left: $space-xs;
+        transition: all 0.3s ease-in-out;
+      }
+  
+      & div {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        & .step-icon {
+          width: 25px;
+          height: auto;
+          aspect-ratio: 1/1;
+  
+          & svg {
+            fill: $primary-color;
+          }
+        }
+        & .step-title{
+            line-height: $step-3;
+        }
+      }
+      &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: linear-gradient(to top, rgba(from black r g b / 70%), rgba(from black r g b / 0%));
+        opacity: 0;
+        transition: all .3s ease-in-out;
+      }
+      &:nth-child(1)::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        background-image: url('src/assets/images/process-card-1.webp');
+        background-size: cover;
+      }
+  
+      &:nth-child(2)::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        background-image: url('src/assets/images/process-card-2.webp');
+        background-size: cover;
+      }
+  
+      &:nth-child(3)::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        background-image: url('src/assets/images/process-card-3.webp');
+        background-size: cover;
+      }
+  
+      &:nth-child(4)::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        background-image: url('src/assets/images/process-card-4.webp');
+        background-size: cover;
+      }
+    }
+  }
+

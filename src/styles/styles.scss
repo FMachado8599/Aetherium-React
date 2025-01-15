@@ -13,3 +13,15 @@
 
 @use './components/hero/hero';
 
+@use './components/process/process';
+@use './components/process/stepsContainer';
+
+@use './components/benefits/benefits';
+@use './components/benefits/benefitsContainer';
+
+
+@use './components/opinions/opinions';
+@use './components/opinions/opinionsContainer';
+@use './components/opinions/rating';
+
+@use './components/footer/footer';

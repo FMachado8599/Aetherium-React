@@ -1,0 +1,12 @@
+@use '../../generals/variables' as *;
+
+.opinions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $space-3xl;
+    & h2{
+        padding-bottom: $space-l;
+    }
+}

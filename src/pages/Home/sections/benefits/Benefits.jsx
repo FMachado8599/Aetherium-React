@@ -6,8 +6,8 @@ const Benefits = () =>{
     const { text } = useText();
 
     return (
-        <section>
-            <h2>{text.benefitsTitle}</h2>
+        <section className='benefits'>
+            <h2 className='benefits-title'>{text.benefitsTitle + " "}<span className=''>{text.benefitsTitleSpan}</span></h2>
             <BenefitsContainer />
         </section>
     )

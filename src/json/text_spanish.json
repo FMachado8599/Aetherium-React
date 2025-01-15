@@ -51,7 +51,8 @@
             "image": "../assets/images/pc_zeus1.webp"
         }
     ],
-    "benefitsTitle": "Por Qué Elegir Aetherium",
+    "benefitsTitle": "Por Qué Elegir",
+    "benefitsTitleSpan": "Aetherium",
     "benefits": [
         {
             "image": "../assets/icons/shield.svg",
@@ -99,7 +100,7 @@
         }
     ],
     "companyInfo": {
-        "name": "TechPC",
+        "name": "Aetherium",
         "description": "Especialistas en PCs gaming personalizadas con más de 10 años de experiencia."
     },
     "quickLinks": {
@@ -127,5 +128,5 @@
             { "name": "WhatsApp", "url": "../assets/icons/whatsapp.svg", "link": "https://fmachado.site" }
         ]
     },
-    "copyright": "© 2024 TechPC. Todos los derechos reservados."
+    "copyright": "© 2024 Aetherium. Todos los derechos reservados."
 }

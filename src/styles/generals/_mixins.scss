@@ -2,7 +2,7 @@
 @use 'typography' as *;
 
 @mixin cta-button{
-    background: linear-gradient(135deg, $primary-color, $secondary-color);
+    background: $primary-color;
     background-repeat: no-repeat;
     color: $white;
     padding: $space-xs $space-m;

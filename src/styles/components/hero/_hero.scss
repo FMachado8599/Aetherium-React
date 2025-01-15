@@ -1,5 +1,74 @@
+@use '../../generals/variables' as *;
+
 .hero{
     display: flex;
     width: 100%;
-    background-image: url(../../../assets/images/hero-pc.webp);
+    position: relative;
+    height: 100dvh;
+    max-height: 800px;
+    align-items: center;
+    padding: 0 0 0 $space-m;
+    & .background-color{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -9;
+        background: linear-gradient(180deg, hsla(271, 81%, 56%, .5) 0%, hsla(221, 39%, 11%, 1) 100%);
+        background: -moz-linear-gradient(180deg, hsla(271, 81%, 56%, .5) 0%, hsla(221, 39%, 11%, 1) 100%);
+        background: -webkit-linear-gradient(180deg, hsla(271, 81%, 56%, .5) 0%, hsla(221, 39%, 11%, 1) 100%);
+    }
+    &::before{
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        filter: grayscale(1), ;
+        background-image: url(src/assets/images/hero-pc.webp);
+    }
+    &::after{
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        backdrop-filter: blur(5px);
+
+        mask: linear-gradient(90deg, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+        -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    }
+    & .hero-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        & h1{
+            padding-bottom: $space-s;
+            & span{
+                color: $primary-color;
+                filter: drop-shadow($space-3xs $space-3xs $space-3xs rgba(0,0,0,.5));
+            }
+        }
+        & p{
+            max-width: 60%;
+            padding-bottom: $space-l;
+        }
+        & .hero-cta-button{
+            outline: none;
+            border: none;
+            transition: all .3s ease-in-out;
+            &:hover{
+                outline: transparent;
+                border: transparent;
+                filter: drop-shadow($space-3xs $space-3xs $space-2xs rgba(0,0,0,.3));
+            }
+        }
+        
+    }
 }

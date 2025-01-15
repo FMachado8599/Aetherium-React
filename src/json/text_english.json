@@ -7,7 +7,7 @@
     "navbar":[
             {"text":"Products"},
             {"text":"Contact"},
-            {"text":"Build PC"}
+            {"text":"Build PC →"}
     ],
     "heroText":[
         {
@@ -17,14 +17,13 @@
             "buttonCTA":"Build my PC"
         }
     ],
-    "processText":[
+    "processText":
         {
         "heading1":"Process",
         "headingSpan":"Unique & Easy",
         "paragraph":"How is it done?",
         "buttonCTA":"Start Now"
-        }
-    ],
+        },
     "processSteps":[
         {
         "name":"Explore Our Options",
@@ -45,13 +44,14 @@
         "image":"../assets/images/pc_zeus1.webp"
         },
         {
-        "name":"Get It Delivered to Your Doorstep",
+        "name":"Get It Delivered",
         "icon":"../assets/icons/search.svg",
         "description":"Your assembled PC will arrive ready for you to start gaming without hassle.",
         "image":"../assets/images/pc_zeus1.webp"
         }
       ],
-    "benefitsTitle":"Why Choose Aetherium",
+    "benefitsTitle": "Why Choose",
+    "benefitsTitleSpan": "Aetherium",
     "benefits":[
         {
         "image":"../assets/icons/shield.svg",
@@ -99,7 +99,7 @@
         }
       ],
       "companyInfo": {
-        "name": "TechPC",
+        "name": "Aetherium",
         "description": "Specialists in custom gaming PCs with over 10 years of experience."
       },
       "quickLinks": {
@@ -122,10 +122,10 @@
       "socialMedia": {
         "title": "Follow Us",
         "platforms": [
-            { "name": "Facebook", "url":"../assets/icons/facebook.svg", "link":"https://fmachado.site" },
-            { "name": "Instagram", "url":"../assets/icons/instagram.svg", "link":"https://fmachado.site" },
-            { "name": "WhatsApp", "url": "../assets/icons/whatsapp.svg", "link":"https://fmachado.site" }
+            { "name": "Facebook", "url":"src/assets/icons/facebook.svg", "link":"https://fmachado.site" },
+            { "name": "Instagram", "url":"src/assets/icons/instagram.svg", "link":"https://fmachado.site" },
+            { "name": "WhatsApp", "url": "src/assets/icons/whatsapp.svg", "link":"https://fmachado.site" }
         ]
       },
-      "copyright": "© 2024 TechPC. All rights reserved."
+      "copyright": "© 2024 Aetherium. All rights reserved."
 }

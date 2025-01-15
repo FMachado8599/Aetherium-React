@@ -1,0 +1,57 @@
+@use '../../generals/variables' as *;
+@use '../../generals/typography' as *;
+
+.opinions-list{
+    display: grid;
+    grid-template-columns: repeat(4,max-content);
+    gap: $space-m;
+    list-style: none;
+    & .opinion{
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        overflow: hidden;
+        gap: $space-2xs;
+        background: rgb(from $secondary-background-color r g b / 10%);
+        border: 1px solid rgba(255,255,255,.2);
+        padding: $space-s;
+        border-radius: $space-xs;
+        filter: drop-shadow(0px 0px 10px transparent);
+        transition: all .3s ease-in-out;
+        &:hover{
+            scale: 1.05;
+            background: rgb(from $secondary-background-color r g b / 20%);
+            filter: drop-shadow(0px 0px 20px $secondary-background-color);
+        }
+        & .user-info{
+            display: grid;
+            grid-template-columns: $space-2xl 1fr;
+            grid-template-rows: 1fr;
+            gap: $space-xs;
+            & img{
+                max-width: $space-2xl;
+                border-radius: 99%;
+            }
+            & div{
+                display: flex;
+                flex-direction: column;
+                gap: $space-3xs;
+                justify-content: center;
+                & .user-name{
+                    font-size: $step-0;
+                }
+                & .user-ocupation{
+                    font-size: calc($step--2 + 2px);
+                    font-weight: 300;
+                    color: $font-tertiary-color;
+                }
+            }
+        }
+        & .user-opinion{
+            font-size: $step--1;
+            font-weight: 200;
+        }
+    }
+}

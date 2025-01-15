@@ -1,0 +1,110 @@
+@use '../../generals/variables' as *;
+@use '../../generals/typography' as *;
+
+footer{
+    background: rgb(from $primary-background-color r g b /50%);
+    padding: $space-l $space-m;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    & .company{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(160px, 1fr));
+        gap: 2rem;
+        max-width: 1024px;
+        width: 100%;
+        & .company-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & img{
+                max-height: 100px;
+            }
+            & h3{
+                font-size: $step-1;
+                & a{
+                    color: $primary-color;
+                }
+            }
+        }
+        & .links-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            & h4{
+                font-size: $step-0;
+            }
+            & ul{
+                list-style: none;
+                line-height: $step-2;
+                & li{
+                    & a {
+                        font-size: $step--1;
+                        font-weight: 400;
+                        color: $font-tertiary-color;
+                        & img{
+                            & svg{
+                                color: $primary-color;
+                                fill: $primary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .footer-devider{
+        padding-bottom: $space-l ;
+        height: 1px;
+        width: 80%;
+        max-width: 1024px;
+        border-top: 1px solid rgb(from $font-tertiary-color r g b / 30%);
+        margin-top: $space-l;
+    }
+    & .rights-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        position: relative;
+        & .designer-links{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-right: 1px solid $font-tertiary-color;
+            padding-right: $space-l;
+            gap: $space-s;
+            & h3{
+                font-weight: 400;
+                font-size: $step--2;
+                color: $font-tertiary-color;
+            }
+            & a{
+                & .designer-social-link{
+                    aspect-ratio: 1/1;
+                    width: auto;
+                    height: 35px;
+                    color: $font-tertiary-color;
+                    border: 1px solid $font-tertiary-color;
+                    border-radius: $space-3xs;
+                    padding: $space-3xs;
+                    transition: all .2s ease-in-out;
+                    &:hover{
+                        filter: drop-shadow(0px 0px 10px $primary-color);
+                        border: 1px solid $primary-color;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        & p{
+            font-size: $step--2;
+            color: $font-tertiary-color;
+        }
+    }
+}

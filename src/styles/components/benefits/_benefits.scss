@@ -1,0 +1,30 @@
+@use '../../generals/variables' as *;
+
+.benefits{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: $space-2xl-3xl;
+    background-image: rgb(from $primary-background-color r g b / 70%);
+    &::after{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        z-index: -2;
+        width: 90%;
+        height: 90%;
+        background: radial-gradient(closest-side, $primary-color, transparent 80%);
+        border-radius: 50%;
+        filter: blur(100px);
+    }
+    & .benefits-title{
+        margin-bottom: $space-l;
+    }
+    & span{
+        color: $primary-color;
+    }
+}

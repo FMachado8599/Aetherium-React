@@ -1,4 +1,7 @@
 import { useText } from '../../context/textContext.jsx'
+import logo from '../../assets/logos/logo-color.svg'
+import { Linkedin } from 'lucide-react';
+import { Link } from 'lucide-react';
 
 const Footer = () =>{
 
@@ -6,13 +9,13 @@ const Footer = () =>{
 
     return (
         <footer>
-            <div>
-                <div>
+            <div className='company'>
+                <div className='company-info'>
+                    <img src={logo} alt="Logo de Aetherium" />         
                     <h3><a href="">{text.companyInfo.name}</a></h3>
-                    <p>{text.companyInfo.decription}</p>
                 </div>
-                <div>
-                    <h3>{text.quickLinks.title}</h3>
+                <div className='links-section'>
+                    <h4>{text.quickLinks.title}</h4>
                     <ul>
                         {text.quickLinks.links.map((link, index) => (
                             <li key={index}>
@@ -21,8 +24,8 @@ const Footer = () =>{
                         ))}
                     </ul>
                 </div>
-                <div>
-                    <h3>{text.legal.title}</h3>
+                <div className='links-section'>
+                    <h4>{text.legal.title}</h4>
                     <ul>
                         {text.legal.links.map((link, index) => (
                             <li key={index}>
@@ -31,19 +34,25 @@ const Footer = () =>{
                         ))}
                     </ul>
                 </div>
-                <div>
-                    <h3>{text.socialMedia.title}</h3>
+                <div className='links-section'>
+                    <h4>{text.socialMedia.title}</h4>
                     <ul>
                         {text.socialMedia.platforms.map((platform, index) => (
                             <li key={index}>
-                                <a href={platform.link}><img src={platform.url} alt={platform.name}/></a>
+                                <a href={platform.link}><img className='socials-link' src={platform.url} alt={platform.name}/></a>
                             </li>
                         ))}
                     </ul>
                 </div>
             </div>
-            <div>
-                <p></p>
+            <div className='footer-devider'></div>
+            <div className='rights-info'>
+                <div className='designer-links'>
+                    <a href="https://www.linkedin.com/in/facundo-machado-b1554825a/" target='blank'><Linkedin className='designer-social-link'/></a>
+                    <a href="https://fmachado.site" target='blank'><Link className='designer-social-link'/></a>
+                    <h3>Designed by FMachado</h3>
+                </div>
+                <p>{text.copyright}</p>
             </div>
         </footer>
     )

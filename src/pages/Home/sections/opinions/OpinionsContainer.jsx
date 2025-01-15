@@ -1,6 +1,7 @@
 import { db } from '../../../../firebase/config.js'
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { useEffect, useState } from 'react';
+import Rating from './Rating.jsx';
 
 const OpinionsContainer = () =>{
 
@@ -27,14 +28,18 @@ const OpinionsContainer = () =>{
         }, []);
 
     return (
-        <ul>
+        <ul className='opinions-list'>
             {user.map((user, index) => (
-                <li key={index}>
-                    <img src={user.avatar} alt={`Avatar`} />
-                    <h1>{user.name}</h1>
-                    <p>{user.role}</p>
-                    <p>{user.opinion}</p>
-                    <p>{user.rating}</p>
+                <li className='opinion' key={index}>
+                    <div className='user-info'>
+                        <img src={user.avatar} alt={`Avatar`} />
+                        <div>
+                            <h4 className='user-name'>{user.name}</h4>
+                            <p className='user-ocupation'>{user.ocupation}</p>
+                        </div>
+                    </div>
+                    <p className='user-opinion'>{user.opinion}</p>
+                    <Rating value={user.rating}/>
                 </li>
             ))}
         </ul>

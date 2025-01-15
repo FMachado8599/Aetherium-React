@@ -6,7 +6,7 @@ const Opinions = () =>{
     const { text } = useText();
 
     return (
-        <section>
+        <section className='opinions'>
             <h2>{text.opinionsTitle}</h2>
             <OpinionsContainer />
         </section>
