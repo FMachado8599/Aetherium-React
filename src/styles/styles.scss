@@ -1,7 +1,7 @@
-@use './generals/_Variables';
-@use './generals/_Index';
-@use './generals/_Typography';
-@use './generals/_Mixins';
+@use './generals/variables';
+@use './generals/index';
+@use './generals/typography';
+@use './generals/mixins';
 
 @use './components/header/header';
 @use './components/header/textbanner';
