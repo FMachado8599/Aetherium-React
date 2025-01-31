@@ -2,9 +2,11 @@
 @use 'mixins' as *;
 
 *{
+  // border: 1px solid red;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -36,6 +38,13 @@ button{
   @include cta-button;
   cursor: pointer;
   transition: border-color .25s;
+  &:disabled{
+    background-color: grey;
+    cursor: auto;
+    &:hover{
+      border: 1px solid transparent;
+    }
+  }
 }
 
 body {

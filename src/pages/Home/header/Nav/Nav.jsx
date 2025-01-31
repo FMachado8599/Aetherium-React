@@ -1,4 +1,5 @@
 import { useText } from '../../../../context/textContext.jsx'
+import { Link } from 'react-router-dom';
 
 const Nav = () =>{
 
@@ -9,7 +10,7 @@ const Nav = () =>{
                 <ul className='nav-link-list'>
                     {text.navbar.map((navLink, index) => (
                         <li className='nav-list-item' key={index}>
-                            <a className='nav-link' href="">{navLink.text}</a>
+                            <Link to={navLink.link} className='nav-link'>{navLink.text}</Link>
                         </li>
                     ))}
                 </ul>

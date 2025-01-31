@@ -5,9 +5,12 @@
             "banner3": "Construye la PC de tus sueños con los mejores componentes y nuestra experiencia."
         },
     "navbar":[
-        {"text":"Productos"},
-        {"text":"Contacto"},
-        {"text":"Armar PC"}
+        {"text":"Productos",
+        "link": "contact"},
+        {"text":"Contacto",
+        "link": "contact"},
+        {"text":"Armar PC",
+        "link": "build-your-pc"}
     ],
     "heroText": [
         {

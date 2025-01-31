@@ -5,9 +5,12 @@
           "banner3": "Build the PC of your dreams with the best components and our expertise."
       },
     "navbar":[
-            {"text":"Products"},
-            {"text":"Contact"},
-            {"text":"Build PC →"}
+            {"text":"Products",
+             "link": "products"},
+            {"text":"Contact",
+             "link": "contact"},
+            {"text":"Build PC →",
+             "link": "build-your-pc"}
     ],
     "heroText":[
         {

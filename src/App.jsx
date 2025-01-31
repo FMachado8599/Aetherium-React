@@ -8,6 +8,8 @@ import NotFound from './pages/NotFound.jsx';
 import { Provider } from 'react-redux';
 import { Builder } from './pages/Builder/Builder.jsx';
 import store from './redux/store.js';
+import Header from './pages/Home/header/Header.jsx';
+import Footer from './pages/Home/Footer.jsx';
 
 function App() {
 
@@ -15,6 +17,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Provider store={store}>
+          <Header/>
           <Routes>
             <Route path='/' element={<MainPage />}/>
             <Route path='/*' element={<NotFound />}/>
@@ -24,6 +27,7 @@ function App() {
             <Route path='/contact' element={<Contact />}/>
             <Route path='/products' element={<Products />}/>
           </Routes>
+          <Footer/>
         </Provider>
       </BrowserRouter>
     </div>

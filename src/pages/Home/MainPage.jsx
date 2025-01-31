@@ -1,14 +1,16 @@
-import Header from './header/Header.jsx';
-import Home from './Home/Home.jsx';
-import Footer from './Footer.jsx';
+import Hero from './sections/Hero/Hero';
+import Process from './sections/Process/Process';
+import Benefits from './sections/Benefits/Benefits';
+import Opinions from './sections/Opinions/Opinions';
 
 const MainPage = () => {
   return (
-    <div>
-        <Header/>
-        <Home />
-        <Footer />
-    </div>
+    <main className='main-home'>
+        <Hero />
+        <Process />
+        <Benefits />
+        <Opinions />        
+    </main>
   )
 }
 
