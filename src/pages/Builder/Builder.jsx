@@ -4,10 +4,10 @@ import { useState } from "react";
 
 export const Builder = () => {
 
-  const{addToCart} = useCart();
+  const{ addToCart } = useCart();
 
   const { categories, products, loading } = useData();
-  const [build, setBuild] = useState(() => JSON.parse(localStorage.getItem("build")) || []);
+  const [ build, setBuild ] = useState(() => JSON.parse(localStorage.getItem("build")) || []);
 
   if (loading) return <p>Loading...</p>;
 
